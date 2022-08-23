@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro do Paciente</h1>
+        <p id="subtitulo">Esclerose Múltipla</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" nome="Nome" id="Nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" nome="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="Email"><strong>Email</strong></label>
+            <input type="Email" nome="Email" id="Email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Você é portador de qual tipo de Esclerose Múltipla?</strong></label>
+            <label>
+                <input type="checkbox" nome="doen" value="esc" checked>Remitente-recorrente
+            </label>
+            <label>
+                <input type="checkbox" nome="doen" value="esc">Primária-progressiva
+            </label>
+            <label>
+                <input type="checkbox" nome="doen" value="esc">Secundária-progressiva
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="Idade"><strong>Idade</strong></label>
+            <select id="Idade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Menor 18</option>
+                <option>Maior 18</option>
+                <option>Maior 40</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione um ou mais sintomas:</strong></label><br><br>
+                <input type="checkbox" id="sintoma1" nome="sintoma1" value="Fadiga">
+                <label for="sintoma1">Fadiga</label>
+
+                <input type="checkbox" id="sintoma2" nome="sintoma1" value="Sensitivas">
+                <label for="sintoma2">Sensitivas</label>
+
+                <input type="checkbox" id="sintoma3" nome="sintoma1" value="Visuais">
+                <label for="sintoma3">Visuais</label>
+
+                <input type="checkbox" id="sintoma4" nome="sintoma1" value="Motora">
+                <label for="sintoma4">Motora</label> <br>
+
+                <input type="checkbox" id="sintoma5" nome="sintoma1" value="Ataxia">
+                <label for="sintoma5">Ataxia</label>
+
+                <input type="checkbox" id="sintoma6" nome="sintoma1" value="Esfincterianas">
+                <label for="sintoma6">Esfincterianas</label>
+
+                <input type="checkbox" id="sintoma7" nome="sintoma1" value="Cognitivas">
+                <label for="sintoma7">Cognitivas</label>
+
+                <input type="checkbox" id="sintoma8" nome="sintoma1" value="Mentais">
+                <label for="sintoma8">Mentais</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco da sua experiência:</strong></label><br>
+            <textarea row="10" style="width: 30em" id="experiência" name="experiencia"></textarea>       
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+
+</body>
+</html>
